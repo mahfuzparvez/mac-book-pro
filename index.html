@@ -28,49 +28,54 @@
             </div>
             <!-- memory section -->
             <h4 id="memory-title" class="phone-configuration-title">Memory</h4>
-            <button type="button" class="btn btn-outline-secondary mx-2 ms-0">8GB unifited memory</button>
-            <button type="button" class="btn btn-outline-secondary">16GB unifited memory</button>
+            <button id="8gb-memory-btn" type="button" class="btn btn-outline-secondary mx-2 ms-0">8GB unifited
+                memory</button>
+            <button id="16gb-memory-btn" type="button" class="btn btn-outline-secondary">16GB unifited memory</button>
             </div>
             <!-- storage section -->
             <h4 class="phone-configuration-title">Storage</h4>
             <div>
-                <button type="button" class="btn btn-outline-secondary mx-2 ms-0">256GB SSD storage</button>
-                <button type="button" class="btn btn-outline-secondary mx-2 ms-0">512GB SSD storage</button>
-                <button type="button" class="btn btn-outline-secondary mx-2 ms-0">1TB SSD storage</button>
+                <button id="256gb-storage-btn" type="button" class="btn btn-outline-secondary mx-2 ms-0">256GB SSD
+                    storage</button>
+                <button id="512gb-storage-btn" type="button" class="btn btn-outline-secondary mx-2 ms-0">512GB SSD
+                    storage</button>
+                <button id="1tb-storage-btn" type="button" class="btn btn-outline-secondary mx-2 ms-0">1TB SSD
+                    storage</button>
             </div>
             <!-- delivery section -->
             <h4 class="phone-configuration-title">Choose your delivery option</h4>
             <div>
-                <button type="button" class="btn btn-outline-secondary mx-2 ms-0">Friday, Aug 25 FREE Prime
+                <button id="delivery-free-btn" type="button" class="btn btn-outline-secondary mx-2 ms-0">Friday, Aug 25
+                    FREE Prime
                     Delivery</button>
-                <button type="button" class="btn btn-outline-secondary mx-2 ms-0">Friday, Aug 21 Delivery charge
+                <button id="delivery-charge-btn" type="button" class="btn btn-outline-secondary mx-2 ms-0">Friday, Aug
+                    21 Delivery charge
                     $20</button>
             </div>
             <!-- calculation section -->
-
             <table class="table fw-bold mt-5 w-50">
                 <thead>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Best Price</td>
-                        <th scope="row">$1299</th>
+                        <th scope="row">$<span id="bestPrice">1299</span></th>
                     </tr>
                     <tr>
                         <td>Extra Memory Cost</td>
-                        <th scope="row">$0</th>
+                        <th scope="row">$<span id="memory-cost">0</span></th>
                     </tr>
                     <tr>
                         <td>Extra Storage Cost</td>
-                        <th scope="row">$0</th>
+                        <th scope="row">$<span id="storage-cost">0</span></th>
                     </tr>
                     <tr>
                         <td>Delivery charge</td>
-                        <th scope="row">$0</th>
+                        <th scope="row">$ <span id="delivery-charge">0</span></th>
                     </tr>
                     <tr>
                         <td>Total Price</td>
-                        <th scope="row">$1299</th>
+                        <th scope="row">$<span id="total-cost">1299</span></th>
                     </tr>
                 </tbody>
             </table>
@@ -79,16 +84,18 @@
             <p class="mt-5 mb-1">Add Pomo Code</p>
             <div class="d-flex w-50">
 
-                <input type="text" class="form-control me-2" aria-label="Username" aria-describedby="addon-wrapping">
-                <button type="button" class="btn btn-danger">Apply</button>
+                <input id="pomoInput" type="text" class="form-control me-2" aria-label="Username"
+                    aria-describedby="addon-wrapping">
+                <button id="applyBtn" type="button" class="btn btn-danger">Apply</button>
             </div>
         </section>
     </main>
     <hr class="footer-up-hr-lain">
     <!-- footer section -->
     <footer class="d-flex justify-content-center">
-        <h1>Total: $1299</h1>
+        <h1>Total: $<span id="footer-total">1299</span></h1>
     </footer>
+    <script src="JS/index.js"></script>
 </body>
 
 </html>
